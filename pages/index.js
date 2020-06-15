@@ -2,6 +2,8 @@ import ReactTyped from 'react-typed';
 import { Container, Row, Col } from 'reactstrap';
 import BaseLayout from '../components/layouts/BaseLayout';
 
+const roles = ['Developer', 'Tech Lover', 'Team Player', 'Full Stack', 'React'];
+
 export default function Home() {
   return (
     <BaseLayout className='cover'>
@@ -44,7 +46,7 @@ export default function Home() {
                 loop
                 typeSpeed={70}
                 backSpeed={70}
-                strings={['Testing', 'Some more testing', 'Blah Blah Blah']}
+                strings={roles}
                 backDelay={1000}
                 loopCount={0}
                 showCursor
