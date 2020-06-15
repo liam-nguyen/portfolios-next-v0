@@ -44,8 +44,8 @@ export default function Home() {
               <ReactTyped
                 className='self-typed'
                 loop
-                typeSpeed={70}
-                backSpeed={70}
+                typeSpeed={60}
+                backSpeed={60}
                 strings={roles}
                 backDelay={1000}
                 loopCount={0}
