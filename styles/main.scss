@@ -1,5 +1,6 @@
 @import './shared/fonts';
 @import './index';
+@import './header';
 
 html,
 body {
@@ -13,4 +14,8 @@ body {
   font-weight: bold;
   letter-spacing: 2px;
   color: white;
+}
+
+.absolute {
+  position: absolute;
 }
