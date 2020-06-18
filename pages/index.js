@@ -16,6 +16,7 @@ export default function Home() {
 
   return (
     <BaseLayout
+      title='Liam Nguyen - Portfolio'
       className={`cover ${isFlipping ? 'cover-1' : 'cover-0'}`}
       headerType='index'>
       <div className='main-section'>

@@ -4,7 +4,7 @@ import { Row, Col } from 'reactstrap';
 
 const CV = () => (
   <BaseLayout>
-    <BasePage title="I'm CV page" customClassName='cv-page'>
+    <BasePage customClassName='cv-page'>
       <Row>
         <Col md={{ size: 8, offset: 2 }}>
           <div className='cv-title'>
