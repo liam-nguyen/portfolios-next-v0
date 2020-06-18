@@ -139,3 +139,14 @@
 .back {
   transform: rotateY(180deg);
 }
+
+.cover-0 {
+}
+
+.cover-1 {
+  background-image: linear-gradient(
+    45deg,
+    rgb(254, 202, 83),
+    rgb(253, 157, 97)
+  );
+}

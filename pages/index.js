@@ -12,10 +12,12 @@ export default function Home() {
 
   useInterval(() => {
     setIsFlipping(!isFlipping);
-  }, 5e3);
+  }, 15e3);
 
   return (
-    <BaseLayout className='cover' headerType='index'>
+    <BaseLayout
+      className={`cover ${isFlipping ? 'cover-1' : 'cover-0'}`}
+      headerType='index'>
       <div className='main-section'>
         <div className='background-image'>
           <img src='/images/background-index.png' />
@@ -47,7 +49,7 @@ export default function Home() {
                       </div>
                     </div>
                     <img className='image' src='/images/section-2.png' />
-                    <div className='shadow-custom'>
+                    <div className='shadow-custom shadow-custom-2'>
                       <div className='shadow-inner'> </div>
                     </div>
                   </div>
