@@ -12,7 +12,7 @@ import {
 import Login from '../Login';
 import Logout from '../Logout';
 
-const Header = () => {
+const Header = ({ className }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -20,10 +20,9 @@ const Header = () => {
   return (
     <div>
       <Navbar
-        color='transparent'
         dark
         expand='md'
-        className='port-navbar port-default absolute'>
+        className={`port-navbar port-nav-base absolute ${className}`}>
         <NavbarBrand className='port-navbar-brand' href='/'>
           Liam Nguyen
         </NavbarBrand>
@@ -56,6 +55,10 @@ const Header = () => {
       </Navbar>
     </div>
   );
+};
+
+Header.defaultProps = {
+  className: '',
 };
 
 export default Header;

@@ -6,7 +6,7 @@ const roles = ['Developer', 'Tech Lover', 'Team Player', 'Full Stack', 'React'];
 
 export default function Home() {
   return (
-    <BaseLayout className='cover'>
+    <BaseLayout className='cover' headerType='index'>
       <div className='main-section'>
         <div className='background-image'>
           <img src='/images/background-index.png' />
