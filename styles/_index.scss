@@ -121,9 +121,21 @@
 }
 
 .flipper.isFlipping {
-  transform: rotateY(-360deg);
+  transform: rotateY(-180deg);
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  transform: rotateY(0deg);
 }
 
 .back {
-  transform: rotateY(0deg);
+  transform: rotateY(180deg);
 }

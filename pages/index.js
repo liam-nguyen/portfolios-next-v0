@@ -12,7 +12,7 @@ export default function Home() {
 
   useInterval(() => {
     setIsFlipping(!isFlipping);
-  }, 5000);
+  }, 5e3);
 
   return (
     <BaseLayout className='cover' headerType='index'>
@@ -26,7 +26,7 @@ export default function Home() {
             <Col md='6'>
               <div className='hero-section'>
                 <div className={`flipper ${isFlipping ? 'isFlipping' : ''}`}>
-                  <div className='back'>
+                  <div className='front'>
                     <div className='hero-section-content'>
                       <h2> Full Stack Web Developer </h2>
                       <div className='hero-section-content-intro'>
@@ -34,6 +34,19 @@ export default function Home() {
                       </div>
                     </div>
                     <img className='image' src='/images/section-1.png' />
+                    <div className='shadow-custom'>
+                      <div className='shadow-inner'> </div>
+                    </div>
+                  </div>
+
+                  <div className='back'>
+                    <div className='hero-section-content'>
+                      <h2> Get Your Projects Done </h2>
+                      <div className='hero-section-content-intro'>
+                        Professional and top quality service in web development.
+                      </div>
+                    </div>
+                    <img className='image' src='/images/section-2.png' />
                     <div className='shadow-custom'>
                       <div className='shadow-inner'> </div>
                     </div>
