@@ -39,7 +39,7 @@ const Header = ({ className }) => {
               <BootstrapLink route='/portfolios' title='Portfolios' />
             </NavItem>
             <NavItem className='port-navbar-item'>
-              <BootstrapLink route='/blog' title='Blog' />
+              <BootstrapLink route='/blogs' title='Blogs' />
             </NavItem>
             <NavItem className='port-navbar-item'>
               <BootstrapLink route='/cv' title='CV' />
