@@ -41,7 +41,7 @@ const Portfolios = ({ posts }) => {
 
   return (
     <BaseLayout>
-      <BasePage title="I'm portfolios page" className='portfolio-page'>
+      <BasePage title="I'm portfolios page" customClassName='portfolio-page'>
         <Row>{renderPost(posts)}</Row>
       </BasePage>
     </BaseLayout>

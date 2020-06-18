@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import BootstrapLink from './BootstrapLink';
+import BootstrapLink from '../BootstrapLink';
 
 import {
   Collapse,

@@ -1,9 +1,9 @@
-import Link from 'next/link';
+import ActiveLink from './ActiveLink';
 
 const BootstrapLink = ({ route, title }) => (
-  <Link href={route}>
+  <ActiveLink href={route} activeClassName='active'>
     <a className='nav-link port-navbar-link'>{title}</a>
-  </Link>
+  </ActiveLink>
 );
 
 export default BootstrapLink;
