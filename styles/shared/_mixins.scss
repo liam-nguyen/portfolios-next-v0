@@ -1,0 +1,18 @@
+@mixin animation($type, $transition, $duration) {
+  -webkit-animation: $type $transition $duration;
+  -moz-animation: $type $transition $duration;
+  -ms-animation: $type $transition $duration;
+  -o-animation: $type $transition $duration;
+  animation: $type $transition $duration;
+}
+
+@mixin animation-fill-mode($mode) {
+  -webkit-animation-fill-mode: $mode;
+  animation-fill-mode: $mode;
+}
+
+@mixin animation-delay($delay) {
+  -webkit-animation-delay: $delay;
+  -moz-animation-delay: $delay;
+  animation-delay: $delay;
+}

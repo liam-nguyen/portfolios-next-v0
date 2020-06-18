@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div>
       <BaseLayout>
-        <BasePage customClassName='about-page' title="I'm about page">
+        <BasePage customClassName='about-page'>
           <Row className='mt-5'>
             <Col md='6'>
               <div className='left-side'>
@@ -18,16 +18,19 @@ const About = () => {
                 </p>
               </div>
             </Col>
-            <Col md='6'>
-              <div className='fade-in' id='intro'>
+            {/* <Col md='6'>
+              <div className='fade-in'>
                 <p>My name is Liam Nguyen and I am a software engineer</p>
                 <p>
                   I have a Master's degree in Software Engineering and several
                   years of experience working on a wide range of technologies
                   and projects in web applications in React.
                 </p>
+                <p>
+                  Throughout my career, I have acquired technical knowledge.
+                </p>
               </div>
-            </Col>
+            </Col> */}
           </Row>
         </BasePage>
       </BaseLayout>
