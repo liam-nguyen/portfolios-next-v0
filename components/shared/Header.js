@@ -16,13 +16,14 @@ const Header = ({ className }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
+  const menuOpenClass = isOpen ? 'menu-open' : 'menu-close';
 
   return (
     <div>
       <Navbar
         dark
         expand='md'
-        className={`port-navbar port-nav-base absolute ${className}`}>
+        className={`port-navbar port-nav-base absolute ${className} ${menuOpenClass}`}>
         <NavbarBrand className='port-navbar-brand' href='/'>
           Liam Nguyen
         </NavbarBrand>
