@@ -6,7 +6,7 @@ import { Row, Col } from 'reactstrap';
 const About = () => {
   return (
     <div>
-      <BaseLayout>
+      <BaseLayout title='Liam Nguyen - Learn More About Me'>
         <BasePage customClassName='about-page'>
           <Row className='mt-5'>
             <Col md='6'>

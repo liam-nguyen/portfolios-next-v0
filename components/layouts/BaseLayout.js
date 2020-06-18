@@ -5,6 +5,14 @@ const BaseLayout = ({ title, children, headerType, className }) => (
   <>
     <Head>
       <title>{title}</title>
+      <meta
+        name='description'
+        content="My name is Liam Nguyen and I am a software engineer. I have a Master' s degree and experience working with full stack web applications."
+      />
+      <meta
+        name='keywords'
+        content='liam nguyen, liam developer, liam software, liam programming'
+      />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
     </Head>
     <div className='layout-container'>

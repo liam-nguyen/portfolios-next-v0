@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { Link } from '../routes';
 import {
   Col,
   Row,
@@ -16,7 +15,7 @@ import BasePage from '../components/BasePage';
 const Portfolios = ({ posts }) => {
   const renderPost = posts =>
     posts.map(({ id, title, body }) => (
-      <Col md='4'>
+      <Col md='4' key={id}>
         <React.Fragment key={id}>
           <span>
             <Card className='portfolio-card'>
@@ -40,8 +39,8 @@ const Portfolios = ({ posts }) => {
     ));
 
   return (
-    <BaseLayout>
-      <BasePage title="I'm portfolios page" customClassName='portfolio-page'>
+    <BaseLayout title='Liam Nguyen - Learn About My Journey'>
+      <BasePage title='Portfolios' customClassName='portfolio-page'>
         <Row>{renderPost(posts)}</Row>
       </BasePage>
     </BaseLayout>

@@ -3,7 +3,7 @@ import BasePage from '../components/BasePage';
 import { Row, Col } from 'reactstrap';
 
 const CV = () => (
-  <BaseLayout>
+  <BaseLayout title='Liam Nguyen - My CV'>
     <BasePage customClassName='cv-page'>
       <Row>
         <Col md={{ size: 8, offset: 2 }}>
