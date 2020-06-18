@@ -1,6 +1,6 @@
 import Header from '../shared/Header';
 
-const BaseLayout = ({ children, className }) => (
+const BaseLayout = ({ children, className = '' }) => (
   <>
     <div className='layout-container'>
       <Header />

@@ -1,5 +1,7 @@
-import BaseLayout from '../components/layouts/BaseLayout';
 import axios from 'axios';
+
+import BaseLayout from '../components/layouts/BaseLayout';
+import BasePage from '../components/BasePage';
 
 const Portfolio = ({ portfolio }) => {
   const { title, body, id } = portfolio;
@@ -7,9 +9,11 @@ const Portfolio = ({ portfolio }) => {
   return (
     <div>
       <BaseLayout>
-        <h1>I'm Portfolio page</h1>
-        <p>Title: {title}</p>
-        <p>Body: {body}</p>
+        <BasePage>
+          <h1>I'm Portfolio page</h1>
+          <p>Title: {title}</p>
+          <p>Body: {body}</p>
+        </BasePage>
       </BaseLayout>
     </div>
   );

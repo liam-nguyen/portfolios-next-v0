@@ -1,14 +1,17 @@
 import BaseLayout from '../components/layouts/BaseLayout';
+import BasePage from '../components/BasePage';
 
-const Portfolio = ({ portfolio }) => {
+const About = ({ portfolio }) => {
   return (
     <div>
       <BaseLayout>
-        <h1>I'm Portfolios page</h1>
-        <h2>{portfolio}</h2>
+        <BasePage className='about-page'>
+          <h1>I'm About page</h1>
+          <h2>{portfolio}</h2>
+        </BasePage>
       </BaseLayout>
     </div>
   );
 };
 
-export default Portfolio;
+export default About;

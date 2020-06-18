@@ -9,6 +9,8 @@ import {
   Nav,
   NavItem,
 } from 'reactstrap';
+import Login from '../Login';
+import Logout from '../Logout';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,12 +45,12 @@ const Header = () => {
             <NavItem className='port-navbar-item'>
               <BootstrapLink route='/cv' title='CV' />
             </NavItem>
-
-            {/* <NavItem>
-              <NavLink href='https://github.com/reactstrap/reactstrap'>
-                GitHub
-              </NavLink>
-            </NavItem> */}
+            <NavItem className='port-navbar-item'>
+              <Login route='/cv' title='CV' />
+            </NavItem>
+            <NavItem className='port-navbar-item'>
+              <Logout route='/cv' title='CV' />
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>

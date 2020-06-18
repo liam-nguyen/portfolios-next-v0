@@ -2,6 +2,7 @@ import axios from 'axios';
 import { Link } from '../routes';
 
 import BaseLayout from '../components/layouts/BaseLayout';
+import BasePage from '../components/BasePage';
 
 const Portfolios = ({ posts }) => {
   const renderPost = posts =>
@@ -15,8 +16,10 @@ const Portfolios = ({ posts }) => {
 
   return (
     <BaseLayout>
-      <h1>I'm in portfolios page</h1>
-      <ul>{renderPost(posts)}</ul>
+      <BasePage>
+        <h1>I'm in portfolios page</h1>
+        <ul>{renderPost(posts)}</ul>
+      </BasePage>
     </BaseLayout>
   );
 };

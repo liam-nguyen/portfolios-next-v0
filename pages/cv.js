@@ -1,8 +1,11 @@
 import BaseLayout from '../components/layouts/BaseLayout';
+import BasePage from '../components/BasePage';
 
 const CV = () => (
   <BaseLayout>
-    <h1>I'm CV Page</h1>
+    <BasePage>
+      <h1>I'm CV Page</h1>
+    </BasePage>
   </BaseLayout>
 );
 
