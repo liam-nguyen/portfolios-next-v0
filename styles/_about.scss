@@ -1,0 +1,52 @@
+.about-page {
+  color: black;
+
+  .left-side {
+    margin-top: 10vh;
+    text-align: left;
+  }
+
+  .fade-in {
+    opacity: 0;
+
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    animation: fadeIn ease 2s;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+
+  .title {
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+    font-size: 42px;
+    font-weight: bold;
+  }
+
+  .subtitle {
+    -webkit-animation-delay: 2.2s;
+    -moz-animation-delay: 2.2s;
+    animation-delay: 2.2s;
+    font-size: 33px;
+  }
+
+  .subSubtitle {
+    -webkit-animation-delay: 3.6s;
+    -moz-animation-delay: 3.6s;
+    animation-delay: 3.6s;
+    font-size: 18px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
