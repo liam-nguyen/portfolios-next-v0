@@ -5,8 +5,7 @@ const About = ({ portfolio }) => {
   return (
     <div>
       <BaseLayout>
-        <BasePage className='about-page'>
-          <h1>I'm About page</h1>
+        <BasePage customClassName='about-page' title="I'm about page">
           <h2>{portfolio}</h2>
         </BasePage>
       </BaseLayout>

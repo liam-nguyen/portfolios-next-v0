@@ -3,9 +3,7 @@ import BasePage from '../components/BasePage';
 
 const Blog = () => (
   <BaseLayout>
-    <BasePage>
-      <h1>I'm Blog Page</h1>
-    </BasePage>
+    <BasePage title="I'm blog page"></BasePage>
   </BaseLayout>
 );
 

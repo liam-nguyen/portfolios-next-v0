@@ -3,9 +3,7 @@ import BasePage from '../components/BasePage';
 
 const CV = () => (
   <BaseLayout>
-    <BasePage>
-      <h1>I'm CV Page</h1>
-    </BasePage>
+    <BasePage title="I'm CV page"></BasePage>
   </BaseLayout>
 );
 

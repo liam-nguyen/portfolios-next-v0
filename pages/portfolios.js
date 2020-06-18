@@ -16,8 +16,7 @@ const Portfolios = ({ posts }) => {
 
   return (
     <BaseLayout>
-      <BasePage>
-        <h1>I'm in portfolios page</h1>
+      <BasePage title="I'm portfolios page">
         <ul>{renderPost(posts)}</ul>
       </BasePage>
     </BaseLayout>
