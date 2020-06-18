@@ -113,3 +113,17 @@
   border: 2px solid #f37d49;
   box-shadow: -17px 13px 41px rgba(13, 78, 158, 0.3);
 }
+
+.flipper {
+  transition: 1s;
+  transform-style: preserve-3d;
+  // position: relative;
+}
+
+.flipper.isFlipping {
+  transform: rotateY(-360deg);
+}
+
+.back {
+  transform: rotateY(0deg);
+}

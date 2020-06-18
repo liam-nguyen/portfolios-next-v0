@@ -18,7 +18,7 @@ const About = () => {
                 </p>
               </div>
             </Col>
-            {/* <Col md='6'>
+            <Col md='6'>
               <div className='fade-in'>
                 <p>My name is Liam Nguyen and I am a software engineer</p>
                 <p>
@@ -27,10 +27,18 @@ const About = () => {
                   and projects in web applications in React.
                 </p>
                 <p>
-                  Throughout my career, I have acquired technical knowledge.
+                  I have a Master's degree in Software Engineering and several
+                  years of experience working on a wide range of technologies
+                  and projects in web applications in React. I have a Master's
+                  degree in Software Engineering and several years of experience
+                  working on a wide range of technologies and projects in web
+                  applications in React. I have a Master's degree in Software
+                  Engineering and several years of experience working on a wide
+                  range of technologies and projects in web applications in
+                  React.
                 </p>
               </div>
-            </Col> */}
+            </Col>
           </Row>
         </BasePage>
       </BaseLayout>

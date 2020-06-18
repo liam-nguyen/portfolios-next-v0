@@ -1,10 +1,19 @@
 import ReactTyped from 'react-typed';
+import { useState } from 'react';
+import { useInterval } from '../services/customHooks';
+
 import { Container, Row, Col } from 'reactstrap';
 import BaseLayout from '../components/layouts/BaseLayout';
 
 const roles = ['Developer', 'Tech Lover', 'Team Player', 'Full Stack', 'React'];
 
 export default function Home() {
+  const [isFlipping, setIsFlipping] = useState(false);
+
+  useInterval(() => {
+    setIsFlipping(!isFlipping);
+  }, 5000);
+
   return (
     <BaseLayout className='cover' headerType='index'>
       <div className='main-section'>
@@ -16,7 +25,7 @@ export default function Home() {
           <Row>
             <Col md='6'>
               <div className='hero-section'>
-                <div className={`flipper`}>
+                <div className={`flipper ${isFlipping ? 'isFlipping' : ''}`}>
                   <div className='back'>
                     <div className='hero-section-content'>
                       <h2> Full Stack Web Developer </h2>
