@@ -13,7 +13,17 @@ const BaseLayout = ({ title, children, headerType, className }) => (
         name='keywords'
         content='liam nguyen, liam developer, liam software, liam programming'
       />
-      <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+      <meta
+        property='og:title'
+        content='Liam Nguyen - programmer, developer, engineer'
+      />
+      <meta property='og:locale' content='en_US' />
+      <meta property='og:url' content='http://localhost:3000' />
+      <meta property='og:type' content='website' />
+      <meta
+        property='og:description'
+        content="My name is Liam Nguyen and I am a software engineer. I have a Master' s degree and experience working with full stack web applications."
+      />
     </Head>
     <div className='layout-container'>
       <Header className={`port-nav-${headerType}`} />
